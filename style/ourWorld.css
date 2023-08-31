@@ -1,29 +1,64 @@
-*{
+* {
     /*  * is used to change the by the default elemt */
     margin: 0;
     padding: 0;
-    
-/* box- sizing for scroll bar */
+
+    /* box- sizing for scroll bar */
 }
-.container{
+
+.container {
     width: 100%;
     height: 80%;
     background-color: black;
+
 }
-header{
+
+header {
     height: 200px;
     color: antiquewhite;
     display: flex;
     justify-content: space-between;
+}
+
+.main-section p {
+    color: #fff;
+    font-size: 12px;
+    
+    text-decoration: none;
 } 
+
+.caption{
+    color: #777;
+    font-size: 10p;
+    padding: 0;
+}
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.main-section div {
+    flex-basis: calc(25% - 10px);
+    margin-bottom: 50px;
+}
+
 .main-section img {
     height: 150px;
-    width: 200px;
-    padding-bottom: 70px;
-    margin: 10px;
-    margin-right: 0px;
-    
+    width: 300px;
+
 }
-.main-section p{
+
+.navbar{
+    padding-left: 52%;
+    margin-top: 30px;
+}
+.navbar a {
+    float: left; /* Float the links to the right */
+    display: block;
+    text-align: right;
     color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: right
 }
