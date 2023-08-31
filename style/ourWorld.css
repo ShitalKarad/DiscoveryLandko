@@ -1,0 +1,29 @@
+*{
+    /*  * is used to change the by the default elemt */
+    margin: 0;
+    padding: 0;
+    
+/* box- sizing for scroll bar */
+}
+.container{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+}
+header{
+    height: 200px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+} 
+.main-section img {
+    height: 150px;
+    width: 200px;
+    padding-bottom: 70px;
+    margin: 10px;
+    margin-right: 0px;
+    
+}
+.main-section p{
+    color: white;
+}
