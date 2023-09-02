@@ -18,24 +18,28 @@ header {
     display: flex;
     padding-left: 20px;
 }
-.logo img{
-    
-    max-width: 150px; /* Adjust the maximum width of the logo */
-     height: auto; /* Maintain the aspect ratio of the logo */
+
+.logo img {
+
+    max-width: 150px;
+    /* Adjust the maximum width of the logo */
+    height: auto;
+    /* Maintain the aspect ratio of the logo */
     margin: 25% 0% 0% 90%;
 }
 
- 
-.caption{
+
+.caption {
     color: #777;
     font-size: 0.9rem;
     padding: 0;
 }
+
 .main-section {
     display: flex;
     flex-wrap: wrap;
     padding-left: 40px;
-    gap :20px;
+    gap: 20px;
     color: #fff;
     font-size: 12px;
     text-decoration: none;
@@ -51,49 +55,62 @@ header {
     width: 300px;
 
 }
-.navbar{
-    padding-left: 52%;
-    margin-top: 30px;
+
+.navbar {
+    padding-left: 30%;
+
+
 }
+
 .navbar a {
-    float: left; /* Float the links to the right */
+    float: left;
+    /* Float the links to the right */
     display: block;
     text-align: right;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
 }
-   
+
 footer {
-    background-color: #161f1e; 
-    color: #fff; 
-    padding: 20px; 
-    height: 400px;
+    background-color: #161f1e;
+    color: #fff;
+    height: 500px;
 }
 
 .footer-nav {
-    display: flex; 
-    gap:70px;
-    padding-left: 52%; 
+    display: flex;
+    gap: 70px;
+    padding-left: 52%;
+    padding-bottom: 70px;
+}
+
+.space {
+    padding-right: 40px;
 }
 
 .footer-section a {
-    text-decoration: none; 
-    color: #fff; 
-    display: block; 
+    text-decoration: none;
+    color: #fff;
+    display: block;
     padding: 5px;
-    margin-bottom: 10px; 
-   font-family:sans-serif;
-   font-size: 0.8rem;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+
 }
+
 .footer-section a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
+
 }
 
 .flogo img {
-    width: 150px; /* Adjust the maximum width of the logo */
-    height: auto; /* Maintain the aspect ratio of the logo */
-   padding-top: 80px;
-   margin-left: 80px;
-   
+    width: 150px;
+    /* Adjust the maximum width of the logo */
+    height: auto;
+    /* Maintain the aspect ratio of the logo */
+    padding-top: 110px;
+    padding-left: 110px;
+
 }
