@@ -16,30 +16,46 @@ header {
     height: 200px;
     color: antiquewhite;
     display: flex;
-    padding-left: 20px;
+    
 }
 .logo img{
     
-    max-width: 150px; /* Adjust the maximum width of the logo */
-     height: auto; /* Maintain the aspect ratio of the logo */
-    margin: 25% 0% 0% 90%;
+    max-width: 170px; 
+     height: auto; 
+    margin: 35%  55%;
 }
 
- 
+.navbar{
+    padding-left: 25%;
+    margin-top: 35px;
+}
+.navbar a {
+    float: left; 
+    display: block;
+    text-align: right;
+    color: white;
+    padding: 25px 30px;
+    text-decoration: none;
+    font-size: .95rem;
+    font-family: 'Kanit' 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .caption{
-    color: #777;
-    font-size: 0.9rem;
-    padding: 0;
+    color: #f5eeeeea;
+    font-size: 1.1rem;
+    padding-top: 50px;
+    text-align: center;
 }
 .main-section {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 40px;
-    gap :20px;
     color: #fff;
     font-size: 12px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .main-section div {
@@ -47,23 +63,10 @@ header {
 }
 
 .main-section img {
-    height: 150px;
-    width: 300px;
+    height: 270px;
+    width: 449px;
 
 }
-.navbar{
-    padding-left: 32%;
-    margin-top: 30px;
-}
-.navbar a{
-    float: left; 
-    display: block;
-    text-align: right;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
- 
    
 footer {
     background-color: #161f1e; 
@@ -92,9 +95,19 @@ footer {
 }
 
 .flogo img {
-    width: 150px; /* Adjust the maximum width of the logo */
-    height: auto; /* Maintain the aspect ratio of the logo */
+    width: 150px; 
+    height: auto; 
    padding-top: 80px;
    margin-left: 80px;
    
+}
+
+header {
+    background-image: url('../assets/heder-Bakers-Bay-Golf.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    text-align: center;
+    color: white; 
+    font-size: 15px; 
 }
