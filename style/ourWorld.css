@@ -17,6 +17,7 @@ header {
     color: antiquewhite;
     display: flex;
     padding-left: 20px;
+    
 }
 
 .logo img {
@@ -57,8 +58,8 @@ header {
 }
 
 .navbar {
-    padding-left: 30%;
-
+    padding-left: 35%;
+    margin-top: 2% ;
 
 }
 
