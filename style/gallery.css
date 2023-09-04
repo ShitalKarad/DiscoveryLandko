@@ -37,6 +37,9 @@ header {
     font-family: 'Kanit' 'Roboto';
     font-family: 'Roboto', sans-serif;
 }
+.navbar a:hover {
+    text-decoration: underline; 
+}
 .caption{
     color: #f5eeeeea;
     font-size: 1.1rem;
