@@ -163,6 +163,7 @@ input[type="range"] {
     flex-wrap: nowrap;
     background: #ffffff;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .main-section-two div {
@@ -197,7 +198,7 @@ input[type="range"] {
 
 .main-section-three div {
     background: #ffffff;
-    width: 300px;
+    width: 332px;
     height: 470px;
     display: flex;
     align-items: center;
@@ -270,26 +271,20 @@ tr {
 .sub-div-two div {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
-    align-items: start;
-
+    padding-top: 15px;
+   border: none;
     font-weight: 400;
     font-size: 0.9rem;
-    text-align: center;
     font-family: "Open Sans", sans-serif;
-    position: relative;
     color: #354168;
     line-height: 1.5;
-    padding: 40px;
+    
 }
 
-.sub-div-two img {
-    width: 300px;
-    height: 300px;
-    margin: 0;
-    margin-right: 10px;
+.text-div{
+    
+    padding-right: 100px;
 }
-
 .sub-div-three {
     margin-top: 2%;
     margin: 20px;
