@@ -20,10 +20,12 @@ function addElement() {
     }
     
     var departments = document.getElementsByName("department");
-    let selectedDepartments = ""
+    let selectedDepartments = [];
+        let count = 0;
     for (let i = 0; i < departments.length; i++) {
         if (departments[i].checked) {
-            selectedDepartments += departments[i].value +" " ;
+            selectedDepartments[count] = departments[i].value ;
+            count++;
         } 
     }
     
@@ -61,4 +63,6 @@ function addElement() {
             console.log(error);
         }
     })
+
+
 }
