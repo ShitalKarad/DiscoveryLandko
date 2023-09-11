@@ -20,7 +20,8 @@ function employeeData(data) {
 
     $.each(data, (index,employee)=>{
         const row = $('<tr>')
-        row.append($('<td>').css({
+        row.attr('data-id', employee.id);
+         row.append($('<td>').css({
             'display': 'flex',
             'align-items': 'center',
             'justify-content': 'center',
@@ -40,7 +41,25 @@ function employeeData(data) {
         row.append(`<td>${employee.date}</td>`);
         row.append('<td><i class="fas fa-edit edit-icon"></i>  <i class="fas fa-trash delete-icon"></i></td>');
         table.append(row)
-
-    })
-    
+    }) 
+    deleteEmployee(table);
 };
+
+function deleteEmployee(table){
+    table.on('click','.delete-icon' ,function(){
+
+        const row = $(this).closest('tr');
+        const id = row.data('id');
+    
+        $.ajax({
+            url: `http://localhost:3000/employee/${id}`,
+            type: "DELETE",
+            success:function(){
+                row.remove();
+            },
+            error:function(){
+                console.error('Delete error:', error);
+            },
+        });
+    });
+}
