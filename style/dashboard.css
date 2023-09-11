@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+}
+
+.header-logo-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.header-logo-text div {
+    margin-top: 20px;
+}
+
+.logo-text {
+    text-align: left;
+    margin-left: 0;
+}
+
+.main-container {
+    border: 1px solid red;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #F7F7F7 0% 0% no-repeat padding-box
+}
+
+.main-section {
+    width: 1200px;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    margin: 10%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.text {
+    text-align: left;
+    font: normal normal bold 28px/25px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+}
+
+.btn {
+    height: 45px;
+    width: 180px;
+    background: #82A70C 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    border: none;
+
+}
+
+.fa-regular.fa-plus {
+    color: #FFFFFF;
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+}
+
+.btn-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.fa-solid.fa-magnifying-glass {
+    display: flex;
+    width: 67px;
+    height: 45px;
+    justify-content: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    padding-top: 15px;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.table-content {
+    margin-right: 145px;
+    margin-left: 10%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tr {
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+
+}
+
+th {
+    padding: 8px;
+    background: #42515F 0% 0% no-repeat padding-box;
+    font: normal normal medium 18px/24px Roboto;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+
+
+}
+
+/* Style table cells */
+td {
+    padding: 8px;
+}
+
+/* Style the profile image within the table */
+td img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the name text within the table */
+td span {
+    font-weight: bold;
+}
+
+/* Style the edit and delete icons */
+td .edit-icon {
+    /* Change the color of the edit icon to blue */
+    margin-right: 5px;
+    /* Add margin to the right of the edit icon */
+    cursor: pointer;
+    /* Add a pointer cursor for interaction */
+    font-size: 0.9rem;
+}
+
+td .delete-icon {
+    /* Change the color of the delete icon to red */
+    margin-left: 5px;
+    /* Add margin to the right of the delete icon */
+    cursor: pointer;
+    /* Add a pointer cursor for interaction */
+    font-size: 0.9rem;
+}

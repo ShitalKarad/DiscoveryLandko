@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     height: auto;
-    background: #F7F7F7 0% 0% no-repeat padding-box;
+    background: #F7F7F7 0% 0% no-repeat padding-box
 }
 
 form {
@@ -19,7 +19,7 @@ form {
     height: 800px;
     border: 1px solid green;
     margin: 4%;
-    margin-left: 22%;
+    margin-left: 18%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #F5F5F5;
@@ -35,7 +35,7 @@ header {
 .header-logo-text {
     display: flex;
     flex-direction: row;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 .header-logo-text div {
