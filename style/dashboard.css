@@ -27,11 +27,11 @@ header {
 }
 
 .main-container {
-    border: 1px solid red;
+   
     display: block;
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 800px;
     background: #F7F7F7 0% 0% no-repeat padding-box
 }
 

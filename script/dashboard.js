@@ -31,7 +31,6 @@ function employeeData(data) {
             .css({'height' :' 40px',
              'width':"40px",
              "background": "transparent url('img/Ellipse 1.png') 0% 0% no-repeat padding-box",
-        
         }),
             $('<span>').text(employee.fName)
         ));
@@ -39,10 +38,20 @@ function employeeData(data) {
         row.append(`<td>${employee.department}</td>`);
         row.append(`<td>₹ ${employee.salary}</td>`);
         row.append(`<td>${employee.date}</td>`);
-        row.append('<td><i class="fas fa-edit edit-icon"></i>  <i class="fas fa-trash delete-icon"></i></td>');
+ 
+        
+        row.append('<td><i class="fas fa-edit edit-icon" data-id="' + employee.id + '"></i>  <i class="fas fa-trash delete-icon"></i></td>');
         table.append(row)
+
+        $('table').on('click', '.edit-icon', function () {
+            const employeeId = $(this).data('id');
+            updateElement(employeeId);
+            
+        });
+    
     }) 
     deleteEmployee(table);
+
 };
 
 function deleteEmployee(table){
@@ -63,3 +72,11 @@ function deleteEmployee(table){
         });
     });
 }
+
+function updateElement(id) {
+    
+    localStorage.setItem('setEditId', id);
+    window.location.href = '/pages/employee_form.html'
+    
+}
+

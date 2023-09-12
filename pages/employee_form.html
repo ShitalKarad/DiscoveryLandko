@@ -49,19 +49,19 @@
                         </div>
                         <div class="profile-radio">
                             <div>
-                                <input type="radio" name="profile" value="../assets/profile-images/Ellipse -1.png">
+                                <input type="radio" id="profileEllipse1" name="profile" value="../assets/profile-images/Ellipse -1.png">
                                 <img src="../assets/profile-images/Ellipse -1.png" alt="">
                             </div>
                             <div>
-                                <input type="radio" name="profile" value="../assets/profile-images/Ellipse -7.png">
+                                <input type="radio" id="profileEllipse7" name="profile" value="../assets/profile-images/Ellipse -7.png">
                                 <img src="../assets/profile-images/Ellipse -7.png " alt="">
                             </div>
                             <div>
-                                <input type="radio" name="profile" value="../assets/profile-images/Ellipse -3.png">
+                                <input type="radio" id="profileEllipse3" name="profile" value="../assets/profile-images/Ellipse -3.png">
                                 <img src="../assets/profile-images/Ellipse -3.png " alt="">
                             </div>
                             <div>
-                                <input type="radio" name="profile" value="../assets/profile-images/Ellipse -10.png">
+                                <input type="radio" id="profileEllipse10"  name="profile" value="../assets/profile-images/Ellipse -10.png">
                                 <img src="../assets/profile-images/Ellipse -10.png " alt="">
                             </div>
 
@@ -176,9 +176,12 @@
                     <div class="button-main">
                         <div>
                             <a href="../pages/dashboard.html"><button class="cancel-button" type="button"  >Cancel</button></a>
+
                         </div>
                         <div>
-                            <button class="sub-button" type="submit" onclick="addElement()">Submit</button>
+                            <button class="sub-button" id="submit" type="submit" onclick="addElement()">Submit</button>
+                            <button class="sub-button" type="submit" id="update" style="display: none;" onclick="updateElement()">Update</button>
+
                         </div>
                         <div>
                             <button class="ret-button" type="reset">Reset</button>
