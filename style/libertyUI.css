@@ -23,6 +23,7 @@
 .main-section {
     width: 80%;
     height: auto;
+    margin-bottom: 5%;
 
 }
 
@@ -78,7 +79,7 @@
 header {
     background-color: #464de4;
     width: 100%;
-    height: 10%;
+    height: 4%;
     border: 1px solid green;
     padding: 20px;
 }
@@ -105,6 +106,15 @@ header {
     display: flex;
     font-size: 0.85rem;
     column-gap: 20px;
+    align-items: center;
+
+}
+
+p.icon-text:first-child {
+    font-size: 0.87rem;
+    font-family: Open Sans, sans-serif;
+    font-weight: 200;
+
 }
 
 .button {
@@ -120,23 +130,23 @@ header {
     font-family: "Open Sans", sans-serif;
 }
 
-input[type="range"] {
+.blue-range {
+    /* Track styles */
+    background-color: blue;
+    /* Change the track color to blue */
     width: 100%;
-
-    background: #857bff;
-
 }
 
-input[type="range"] {
-    width: 95%;
-
-    background: #DB504A;
+.red-range {
+    /* Track styles */
+    background-color: red;
+    width: 100%;
 }
 
 .buton-doc {
     background-color: #464de4;
     color: #ffffff;
-    width: 180px;
+    width: 210px;
     height: 42px;
     padding: 12px;
     border-radius: 3px;
@@ -144,10 +154,12 @@ input[type="range"] {
 }
 
 .text-range {
-    color: #404852;
+    color: #8d9498;
     display: flex;
     justify-content: space-between;
     margin-left: 5px;
+    margin: 0px;
+    font-size: 0.9rem;
 }
 
 .button-graph {
@@ -155,6 +167,7 @@ input[type="range"] {
     flex-direction: column;
     padding: 1rem 1.875rem;
     gap: 20px;
+
 }
 
 .main-section-two {
@@ -173,7 +186,7 @@ input[type="range"] {
     display: flex;
     align-items: center;
     padding: 20px;
-    border: 1px solid rgb(238, 219, 219);
+    border: 1px solid gainsboro;
 
 }
 
@@ -194,6 +207,9 @@ input[type="range"] {
     flex-wrap: nowrap;
     gap: 20px;
     margin-left: 20px;
+    width: 100%;
+    
+    
 }
 
 .main-section-three div {
@@ -202,8 +218,9 @@ input[type="range"] {
     height: 470px;
     display: flex;
     align-items: center;
-    border: 1px solid rgb(238, 219, 219);
+   border: 1px solid gainsboro;
     gap: 10px;
+    
 }
 
 .image-div img {
@@ -272,22 +289,25 @@ tr {
     display: flex;
     flex-direction: column;
     padding-top: 15px;
-   border: none;
+    border: none;
     font-weight: 400;
     font-size: 0.9rem;
     font-family: "Open Sans", sans-serif;
     color: #354168;
     line-height: 1.5;
-    
+
 }
 
-.text-div{
-    
+.text-div {
+
     padding-right: 100px;
 }
+
 .sub-div-three {
     margin-top: 2%;
     margin: 20px;
+    
+    
 
 }
 
@@ -301,7 +321,7 @@ tr {
 .table-two th {
     color: #8d9498;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Open Sans", sans-serif;
     padding: 0.7375rem;
 }
@@ -328,10 +348,133 @@ tr {
     background-color: #4CCEAC;
 }
 
-.subdiv-form {
+.sub-div-four {
     display: flex;
-    border: 1px solid red;
-    justify-content: flex-start;
-    padding: 0;
-    width: 300px;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 20px;
+    gap: 20px;
+    margin-right: 20px;
+    
+}
+
+.div-four-first {
+    width: 50%;
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #354168;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+}
+
+.div-four-sec {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    
+
+}
+
+.para {
+    font-size: 0.7rem;
+    color: #8d9498;
+    margin-top: 40px;
+}
+
+.line-list {
+    padding-left: 30px;
+    position: relative;
+}
+
+.line-list ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: #354168;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.para-text {
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    color: #354168;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+.sub-div-five {
+    display: flex;
+    height: 600px;
+    margin-top: 2%;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px outset gainsboro;
+}
+
+.sub-five-first {
+    
+    height: 150px;
+   display: flex ;
+   align-items: flex-start;
+   border-bottom: 1px outset ghostwhite;
+}
+
+.sub-five-sec {
+   
+    height: 150px;
+    border: 1px solid black;
+}
+
+.sub-five-third {
+   
+    height: 150px;
+    border: 1px solid green;
+}
+.profile img{
+    border-radius: 100%;
+    height: auto;
+    width: 80px;
+    position: relative;
+    margin: 20px;
+   
+}
+.text-profile{
+    padding: 35px;
+}
+.manage{
+    margin: 50px;
+}
+select{
+    background-color: #464de4;
+    color: #f3f3f3;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.87rem;
+    border-radius: 0.1875rem;
+    font-weight: 400;
+    border: none;
+}
+option{
+    background-color: white;
+    color: #212529;
 }
