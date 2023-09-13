@@ -35,7 +35,7 @@ function employeeData(data) {
             $('<span>').text(employee.fName)
         ));
         row.append(`<td>${employee.gender}</td>`);
-        row.append(`<td>${employee.department}</td>`);
+        row.append( `<td>${employee.department}</td>`);
         row.append(`<td>₹ ${employee.salary}</td>`);
         row.append(`<td>${employee.date}</td>`);
  

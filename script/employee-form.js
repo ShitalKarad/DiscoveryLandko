@@ -1,53 +1,110 @@
 // var formId = document.getElementsByClassName('form-element');
 
-const editId = parseInt(localStorage.getItem('setEditId'), 10);
+// const editId = localStorage.getItem('setEditId');
 
-const submitbtn = document.getElementById("submit");
-const updatebtn = document.getElementById("update");
+// const submitbtn = document.getElementById("submit");
+// const updatebtn = document.getElementById("update");
 
 
-if (editId) {
-    console.log("editing mode");
-    submitbtn.style.display = "none";
-    updatebtn.style.display = "block";
 
-    //retrive deta
-    $.ajax({
-        url: `http://localhost:3000/employee/${editId}`,
-        method: "GET",
-        dataType: "json",
-        success: function (data) {
-            // binding data from input
-            $("#name").val(data.fName);
+// if (!editId) {
+//     console.log("Adding mode");
+//     localStorage.removeItem('setEditId');
+//     submitbtn.style.display = "block";
+//     updatebtn.style.display = "none";
 
-            $(`input[name="profile"][value="${data.profile}"]`).prop("checked", true);
+// }else {
+//     console.log("editing mode");
+//     submitbtn.style.display = "none";
+//     updatebtn.style.display = "block";
 
-            $(`input[name="gender"][value="${data.gender}"]`).prop("checked", true);
 
-            $.each(data.department, function (_, department) {
-                $(`input[name="department"][value="${department}"]`).prop("checked", true);
-            });
+//     //retrive deta
+//     $.ajax({
+//         url: `http://localhost:3000/employee/${editId}`,
+//         method: "GET",
+//         dataType: "json",
+//         success: function (data) {
+//             // binding data from input
+//             $("#name").val(data.fName);
 
-            $("#salary").val(data.salary);
+//             $(`input[name="profile"][value="${data.profile}"]`).prop("checked", true);
 
-            const dateParts = data.date.split(" ");
-            $("#day").val(dateParts[0]);
-            $("#month").val(dateParts[1]);
-            $("#year").val(dateParts[2]);
+//             $(`input[name="gender"][value="${data.gender}"]`).prop("checked", true);
 
-            $("#note").val(data.note);
-        },
-        error: function (error) {
-            console.error("Failed to fetch employee data:", error);
-        }
-    });
-}
-else {
-    console.log("Adding mode");
-    submitbtn.style.display = "block";
-    updatebtn.style.display = "none";
-   
-}
+//             $.each(data.department, function (_, department) {
+//                 $(`input[name="department"][value="${department}"]`).prop("checked", true);
+//             });
+
+//             $("#salary").val(data.salary);
+
+//             const dateParts = data.date.split(" ");
+//             $("#day").val(dateParts[0]);
+//             $("#month").val(dateParts[1]);
+//             $("#year").val(dateParts[2]);
+
+//             $("#note").val(data.note);
+//         },
+//         error: function (error) {
+//             console.error("Failed to fetch employee data:", error);
+//         }
+//     });
+
+// }
+
+
+
+$(document).ready(function () {
+    const editId = localStorage.getItem('setEditId');
+    const submitbtn = document.getElementById("submit");
+    const updatebtn = document.getElementById("update");
+
+    if (!editId) {
+        console.log("Adding mode");
+        submitbtn.style.display = "block";
+        updatebtn.style.display = "none";
+       
+    } else {
+        console.log("Editing mode");
+        localStorage.removeItem('setEditId');
+        submitbtn.style.display = "none";
+        updatebtn.style.display = "block";
+
+        // AJAX request for editing mode
+        $.ajax({
+            url: `http://localhost:3000/employee/${editId}`,
+            method: "GET",
+            dataType: "json",
+            success: function (data) {
+                // binding data from input
+                $("#name").val(data.fName);
+
+                $(`input[name="profile"][value="${data.profile}"]`).prop("checked", true);
+
+                $(`input[name="gender"][value="${data.gender}"]`).prop("checked", true);
+
+                $.each(data.department, function (_, department) {
+                    $(`input[name="department"][value="${department}"]`).prop("checked", true);
+                });
+
+                $("#salary").val(data.salary);
+
+                const dateParts = data.date.split(" ");
+                $("#day").val(dateParts[0]);
+                $("#month").val(dateParts[1]);
+                $("#year").val(dateParts[2]);
+
+                $("#note").val(data.note);
+            },
+            error: function (error) {
+                console.error("Failed to fetch employee data:", error);
+            }
+        });
+    }
+
+    // Rest of your code for updateElement and addElement functions
+});
+
 
 function updateElement() {
 
@@ -174,13 +231,13 @@ function addElement() {
         data: JSON.stringify(userInput),
         success: function (userInput) {
             console.log(userInput);
-            // localStorage.removeItem("setEditId");
+
         },
         error: function (error) {
             console.error(error);
         }
     });
 
-    
+
 }
 
