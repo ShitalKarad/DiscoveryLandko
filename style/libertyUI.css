@@ -84,6 +84,20 @@ header {
     padding: 20px;
 }
 
+.header-sub-section{
+    display: flex;
+    margin-left: 500px;
+    align-items: center;
+    
+}
+
+
+.header-main-sec{
+    display: flex;
+    align-items: center;
+    
+}
+
 .header-button {
 
     color: #ffffff;
@@ -107,6 +121,7 @@ header {
     font-size: 0.85rem;
     column-gap: 20px;
     align-items: center;
+    padding-top: 15px;
 
 }
 

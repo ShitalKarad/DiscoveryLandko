@@ -50,20 +50,25 @@
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-regular fa-anchor icon-text">
+                    <i class="fa-solid fa-anchor icon-text">
                         <p class="icon-text">Editors</p>
                     </i>
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-regular fa-anchor icon-text">
+                    <i class="fa-solid fa-chart-simple icon-text">
                         <p class="icon-text">Charts</p>
                     </i>
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-solid fa-border-all icon-text">
+                    <i class="fa-solid fa-table-list icon-text">
                         <p class="icon-text">Tables</p>
+                    </i>
+                </div>
+                <div class="icon-img">
+                    <i class="fa-brands fa-nfc-directional icon-text">
+                        <p class="icon-text">Base UI Element</p>
                     </i>
                 </div>
 
@@ -74,13 +79,13 @@
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-sharp fa-light fa-bell icon-text">
+                    <i class="fa-solid fa-bell icon-text">
                         <p class="icon-text">Notification</p>
                     </i>
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-light fa-globe icon-text">
+                    <i class="fa-solid fa-globe icon-text">
                         <p class="icon-text">Icons</p>
                     </i>
                 </div>
@@ -92,7 +97,25 @@
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-regular fa-link">
+                    <i class="fa-regular fa-envelope icon-text">
+                        <p class="icon-text">Email</p>
+                    </i>
+                </div>
+
+                <div class="icon-img">
+                    <i class="fa-solid fa-clipboard-check icon-text">
+                        <p class="icon-text">To Do list</p>
+                    </i>
+                </div>
+
+                <div class="icon-img">
+                    <i class="fa-brands fa-envira icon-text">
+                        <p class="icon-text">gallery</p>
+                    </i>
+                </div>
+
+                <div class="icon-img">
+                    <i class="fa-solid fa-link icon-text">
                         <p class="icon-text">User Pages</p>
                     </i>
                 </div>
@@ -104,19 +127,19 @@
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-regular fa-link icon-text">
+                    <i class="fa-solid fa-link icon-text">
                         <p class="icon-text">General Pages</p>
                     </i>
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-regular fa-suitcase icon-text">
+                    <i class="fa-solid fa-cart-shopping icon-text">
                         <p class="icon-text">E-Commerse</p>
                     </i>
                 </div>
 
                 <div class="icon-img">
-                    <i class="fa-regular fa-suitcase icon-text">
+                    <i class="fa-solid fa-calendar-days icon-text">
                         <p class="icon-text">Calender</p>
                     </i>
                 </div>
@@ -126,12 +149,12 @@
                 <div>
                     <button class="buton-doc" type="button">Documentation</button>
                 </div>
-                <div>
+                <div style="padding-top: 15px;">
                     <h3 class="text-range">Todays sale <p> 50 Sold </p>
                     </h3>
                     <input class="blue-range" type="range" min="0" max="100">
                 </div>
-                <div>
+                <div style="padding-top: 15px;">
                     <h3 class="text-range">Customer Target <p>50</p>
                     </h3>
                     <input class="red-range" type="range" min="0" max="100">
@@ -142,10 +165,38 @@
         </div>
         <div class="main-section">
             <header class="header-main">
-                <div class="header-button">
-                    <div class="icon-img">
-                        <i class="fa-solid fa-bars"> <button class="header-button" type="menu"> +
-                                Create new</button></i>
+                <div class="header-main-sec">
+                    <div class="header-button">
+                        <div class="icon-img">
+                            <i style="color: white;" class="fa-solid fa-bars"> <button class="header-button" type="menu"> +
+                                    Create new</button></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="header-sub-section">
+                            <div>
+                                <select name="english" id="english">
+                                    <option value="English">English</option>
+                                    <option value="french">French</option>
+                                    <option value="espanol">Espanol</option>
+                                    <option value="latin">Latin</option>
+                                    <option value="arbic">Arbic</option>
+                                </select>
+                            </div>
+                            <i style="color: white; margin-left: 20px; border: 1px solid rgba(255, 255, 255, 0.2);
+                            border-radius: 100%; width: 40px; height: 40px; text-align: center; padding-top: 10px;" class="fa-solid fa-bell icon-text">
+                            </i>
+                            <div>
+                                <i style="color: white; margin-left: 20px; border: 1px solid rgba(255, 255, 255, 0.2);
+                            border-radius: 100%; width: 40px; height: 40px; text-align: center; padding-top: 10px;" class="fa-brands fa-nfc-directional icon-text">
+                            </i>
+                            </div>
+                            <div>
+                                <i style="color: white; margin-left: 20px; border: 1px solid rgba(255, 255, 255, 0.2);
+                            border-radius: 100%; width: 40px; height: 40px; text-align: center; padding-top: 10px;" class="fa-brands fa-windows icon-text">
+                            </i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -356,11 +407,11 @@
                                 <option value="manage">Quick reply</option>
                                 <option value="manage">Another Action</option>
                                 <option value="resolve issue"> <i class="fa-solid fa-check icon-text">
-                                    <p class="icon-text"> Resolve Issue </p>
-                                </i></option>
-                                <option ><i style="color: aqua;" class="fa-sharp fa-solid fa-xmark ">
-                                    <p class="icon-text">Close issue</p>
-                                </i></option>
+                                        <p class="icon-text"> Resolve Issue </p>
+                                    </i></option>
+                                <option><i style="color: aqua;" class="fa-sharp fa-solid fa-xmark ">
+                                        <p class="icon-text">Close issue</p>
+                                    </i></option>
                             </select>
                         </div>
                     </div>
@@ -384,7 +435,8 @@
                         <div>
                             <p
                                 style="font-family: Open Sans, sans-serif; font-weight: 400; font-size: 12px; color: #8c8c8c; line-height: 1.5;">
-                                Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl
+                                Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non
+                                nulla sit amet nisl
                             </p>
                             <p
                                 style="font-family: Open Sans, sans-serif; font-weight: 400; font-size: 12px; color: #8c8c8c; line-height: 1.5; padding-top: 10px;">
@@ -398,11 +450,11 @@
                                 <option value="manage">Quick reply</option>
                                 <option value="manage">Another Action</option>
                                 <option value="resolve issue"> <i class="fa-solid fa-check icon-text">
-                                    <p class="icon-text"> Resolve Issue </p>
-                                </i></option>
-                                <option ><i style="color: aqua;" class="fa-sharp fa-solid fa-xmark ">
-                                    <p class="icon-text">Close issue</p>
-                                </i></option>
+                                        <p class="icon-text"> Resolve Issue </p>
+                                    </i></option>
+                                <option><i style="color: aqua;" class="fa-sharp fa-solid fa-xmark ">
+                                        <p class="icon-text">Close issue</p>
+                                    </i></option>
                             </select>
                         </div>
                     </div>
@@ -426,7 +478,8 @@
                         <div>
                             <p
                                 style="font-family: Open Sans, sans-serif; font-weight: 400; font-size: 12px; color: #8c8c8c; line-height: 1.5;">
-                                Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet.                            </p>
+                                Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor
+                                sit amet. </p>
                             <p
                                 style="font-family: Open Sans, sans-serif; font-weight: 400; font-size: 12px; color: #8c8c8c; line-height: 1.5; padding-top: 10px;">
                                 Last responded : 3 hours ago Due in : 2 Days</p>
@@ -439,11 +492,11 @@
                                 <option value="manage">Quick reply</option>
                                 <option value="manage">Another Action</option>
                                 <option value="resolve issue"> <i class="fa-solid fa-check icon-text">
-                                    <p class="icon-text"> Resolve Issue </p>
-                                </i></option>
-                                <option ><i style="color: aqua;" class="fa-sharp fa-solid fa-xmark ">
-                                    <p class="icon-text">Close issue</p>
-                                </i></option>
+                                        <p class="icon-text"> Resolve Issue </p>
+                                    </i></option>
+                                <option><i style="color: aqua;" class="fa-sharp fa-solid fa-xmark ">
+                                        <p class="icon-text">Close issue</p>
+                                    </i></option>
                             </select>
                         </div>
                     </div>
